@@ -14,6 +14,7 @@
 		A10F7E7E225FA6FD008A6EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F7E7C225FA6FD008A6EC1 /* LaunchScreen.storyboard */; };
 		A10F7E89225FA6FE008A6EC1 /* photoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F7E88225FA6FE008A6EC1 /* photoTests.swift */; };
 		A10F7E94225FA6FE008A6EC1 /* photoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F7E93225FA6FE008A6EC1 /* photoUITests.swift */; };
+		A10F7EA222608646008A6EC1 /* chanelA.png in Resources */ = {isa = PBXBuildFile; fileRef = A10F7EA122608646008A6EC1 /* chanelA.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A10F7E8F225FA6FE008A6EC1 /* photoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F7E93225FA6FE008A6EC1 /* photoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoUITests.swift; sourceTree = "<group>"; };
 		A10F7E95225FA6FE008A6EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10F7EA122608646008A6EC1 /* chanelA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chanelA.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A10F7E77225FA6FA008A6EC1 /* Main.storyboard */,
 				A10F7E7A225FA6FD008A6EC1 /* Assets.xcassets */,
 				A10F7E7C225FA6FD008A6EC1 /* LaunchScreen.storyboard */,
+				A10F7EA122608646008A6EC1 /* chanelA.png */,
 				A10F7E7F225FA6FD008A6EC1 /* Info.plist */,
 			);
 			path = photo;
@@ -231,6 +234,7 @@
 			files = (
 				A10F7E7E225FA6FD008A6EC1 /* LaunchScreen.storyboard in Resources */,
 				A10F7E7B225FA6FD008A6EC1 /* Assets.xcassets in Resources */,
+				A10F7EA222608646008A6EC1 /* chanelA.png in Resources */,
 				A10F7E79225FA6FA008A6EC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,10 +435,13 @@
 		A10F7E99225FA6FE008A6EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 743J7J89D4;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = photo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +456,13 @@
 		A10F7E9A225FA6FE008A6EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 743J7J89D4;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = photo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
